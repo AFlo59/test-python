@@ -18,4 +18,4 @@ def test_course_two(course_factory, student_factory):
     for student in students:
         course.add_student(student)
 
-    assert course.students.count() == 2
+    assert course.student_count() == 2 
